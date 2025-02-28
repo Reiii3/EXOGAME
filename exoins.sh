@@ -1,6 +1,8 @@
 bin="/data/local/tmp/exogame"
 fun="https://reiii3.github.io/GVRSH/function/function.sh"
 onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
+function="$bin/function"
+prop="$bin/prop"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -10,8 +12,11 @@ storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
 
 $AXFUN
 import axeron.prop
-. $bin/function
-. $bin/prop
+storm -rP "$bin" -s "${fun}" -fn "function" "$@"
+sleep 1
+storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
+. $function
+. $prop
 
 if [ -n "$1" ] && [ "$1" == "-g" ];then
     axprop $path_online nameGame -s "$2"
