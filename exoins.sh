@@ -6,9 +6,6 @@ prop="$bin/prop"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
-storm -rP "$bin" -s "${fun}" -fn "function" "$@"
-sleep 1
-storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
 
 $AXFUN
 import axeron.prop
