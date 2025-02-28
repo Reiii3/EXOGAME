@@ -29,20 +29,10 @@ if [ -n "$1" ] && [ "$1" == "-v" ];then
 fi
 
 if [ $maintenance = "true" ]; then
-   echo "======================="
-   printer "  EXOGAME 1.0 BETA ON"
-   echo "======================="
-   printer "    [comming soon]"
-   echo 
-   printer "  FITURES :"
-   printer "   -[CASTOM RENDER]"
-   printer "     -vulkan"
-   printer "     -skiavk"
-   printer "     -opengl"
-   printer "     -skiagl"
-   printer "   -[DRIVER GAME]"
-   printer "   -[PERFOMANCE UNIVERSAL]"
-   printer "   -[SENSIX?? In next Update]"
+   echo "   ======================="
+   printer "     EXOGAME 1.0 BETA ON"
+   echo "   ======================="
+   printer "       [comming soon]"
    echo
    printer "[IN THE PROCESS OF MANUFACTURING]"
    sleep 1
