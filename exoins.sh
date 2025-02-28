@@ -3,7 +3,6 @@ fun="https://reiii3.github.io/GVRSH/function/function.sh"
 onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 function="$bin/function"
 prop="$bin/prop"
-$path_online="$prop"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -17,7 +16,7 @@ storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
 . $prop
 
 if [ -n "$1" ] && [ "$1" == "-g" ];then
-    axprop $path_online nameGame -s "$2"
+    axprop $prop nameGame -s "$2"
     nameGame="$2"
     shift 2
     pkg=$(pm list packages | grep -i "$nameGame" | sed 's/package://g')
@@ -31,7 +30,7 @@ fi
 
 if [ $maintenance = "true" ]; then
    echo "======================="
-   echo "  EXOGAME 1.0 BETA ON"
+   printer "  EXOGAME 1.0 BETA ON"
    echo "======================="
    exit 0
 fi
