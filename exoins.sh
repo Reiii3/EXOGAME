@@ -3,6 +3,7 @@ fun="https://reiii3.github.io/GVRSH/function/function.sh"
 onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 function="$bin/function"
 prop="$bin/prop"
+$path_online="$prop"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
