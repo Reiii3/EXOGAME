@@ -33,6 +33,7 @@ if [ $maintenance = "true" ]; then
    printer "     EXOGAME 1.0 BETA ON"
    echo "   ======================="
    printer "       [comming soon]"
+   echo
    printer " Developer : $dev"
    echo
    printer "[IN THE PROCESS OF MANUFACTURING]"
