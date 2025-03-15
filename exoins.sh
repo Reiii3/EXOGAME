@@ -35,7 +35,7 @@ fi
 
 case $1 in
     --info | -i )
-      echo "   ┌[📦] $name | INFORMATION"
+      echo "   ┌[Λ] $name | INFORMATION"
       echo "   ├[📜] Version Modules : $ver | $verc"
       echo "   ├[📤] Version Base : $version | $versionCode"
     if [ "$cek_id" = "$AXERONID" ]; then
