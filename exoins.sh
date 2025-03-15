@@ -31,7 +31,7 @@ if [ -n "$1" ] && [ "$1" == "-v" ];then
 fi
 
 if [ $cek_beta != true ]; then
-  if [ $maintenance = "true" ]; then
+  if [ $maintenance = true ]; then
      echo "   ======================="
      printer "     EXOGAME 1.0 BETA ON"
      echo "   ======================="
