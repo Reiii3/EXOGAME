@@ -38,14 +38,20 @@ fi
 case $1 in
     --info | -i )
       echo "   ┌[Λ] $name | INFORMATION"
+      sleep 0.3
       echo "   ├[📜] Version Modules : $ver | $verc"
+      sleep 0.3
       echo "   ├[📤] Version Base : $version | $versionCode"
+      sleep 0.3
     if [ "$cek_id" = "$AXERONID" ]; then
       echo "   ├[🪪] ID : $AXERONID | Terverifikasi Beta Test"
+      sleep 0.3
     else 
       echo "   ├[🪪] ID : $AXERONID"
+      sleep 0.3
     fi
       echo "   └┬[🖲] Game : ${nameGame:-null}"
+      sleep 0.3
       echo "    └[📁] Packages : ${runPackage:-null}"
       exit 0
     ;;
