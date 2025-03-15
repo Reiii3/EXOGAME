@@ -45,8 +45,8 @@ case $1 in
     else 
       echo "   ├[🪪] ID : $AXERONID"
     fi
-      echo "   └┬[🖲] Game : $nameGame"
-      echo "    └[📁] Packages : $runPackage"
+      echo "   └┬[🖲] Game : ${nameGame:-null}"
+      echo "    └[📁] Packages : ${runPackage:-null}"
       exit 0
     ;;
 esac
