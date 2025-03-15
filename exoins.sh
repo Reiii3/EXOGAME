@@ -1,8 +1,10 @@
-bin="/data/local/tmp/exogame"
-fun="https://reiii3.github.io/GVRSH/function/function.sh"
-onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
-function="$bin/function"
-prop="$bin/prop"
+local bin="/data/local/tmp/exogame"
+local fun="https://reiii3.github.io/GVRSH/function/function.sh"
+local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
+local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt") 
+local function="$bin/function"
+local prop="$bin/prop"
+local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -28,15 +30,19 @@ if [ -n "$1" ] && [ "$1" == "-v" ];then
     shift 
 fi
 
-if [ $maintenance = "true" ]; then
-   echo "   ======================="
-   printer "     EXOGAME 1.0 BETA ON"
-   echo "   ======================="
-   printer "       [comming soon]"
-   echo
-   printer " Developer : $dev"
-   echo
-   printer "[IN THE PROCESS OF MANUFACTURING]"
-   sleep 1
-   exit 0
+if [ $cek_beta != true ]; then
+  if [ $maintenance = "true" ]; then
+     echo "   ======================="
+     printer "     EXOGAME 1.0 BETA ON"
+     echo "   ======================="
+     printer "       [comming soon]"
+     echo
+     printer " Developer : $dev"
+     echo
+     printer "[IN THE PROCESS OF MANUFACTURING]"
+     sleep 1
+     exit 0
+  fi
 fi
+
+echo "Tesssss"
