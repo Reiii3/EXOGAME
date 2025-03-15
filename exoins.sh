@@ -45,6 +45,7 @@ case $1 in
     fi
       echo "   └┬[🖲] Game : $nameGame"
       echo "    └[📁] Packages : $runPackage"
+      exit 0
     ;;
 esac
 
