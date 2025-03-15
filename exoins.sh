@@ -17,18 +17,36 @@ local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false
 . $function
 . $prop
 
+
 if [ -n "$1" ] && [ "$1" == "-g" ];then
-    axprop $prop nameGame -s "$2"
-    nameGame="$2"
-    shift 2
-    pkg=$(pm list packages | grep -i "$nameGame" | sed 's/package://g')
+    pkg=$(pm list packages | grep -i "$2" | sed 's/package://g')
     axprop $path_axeronprop runPackage -s "$pkg"
     runPackage="$pkg"
+    # Mengubah Packagee Menjadi Nama Game
+    game=$(pkglist -L "$pkg")
+    axprop $prop nameGame -s "$game"
+    nameGame="$game"
+    shift 2
 fi
 if [ -n "$1" ] && [ "$1" == "-v" ];then
     renderer="$2"
     shift 
 fi
+
+case $1 in
+    --info | -i )
+      echo "   ┌[📦] $name | INFORMATION"
+      echo "   ├[📜] Version Modules : $ver | $verc"
+      echo "   ├[📤] Version Base : $version | $versionCode"
+    if [ "$cek_id" = "$AXERONID" ]; then
+      echo "   ├[🪪] ID : $AXERONID | Terverifikasi Beta Test"
+    else 
+      echo "   ├[🪪] ID : $AXERONID"
+    fi
+      echo "   └┬[🖲] Game : $nameGame"
+      echo "    └[📁] Packages : $runPackage"
+    ;;
+esac
 
 if [ $cek_beta != true ]; then
   if [ $maintenance = true ]; then
