@@ -1,10 +1,8 @@
 local bin="/data/local/tmp/exogame"
 local fun="https://reiii3.github.io/GVRSH/function/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
-local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt") 
 local function="$bin/function"
 local prop="$bin/prop"
-local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -14,6 +12,8 @@ import axeron.prop
 storm -rP "$bin" -s "${fun}" -fn "function" "$@"
 sleep 1
 storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
+local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
+local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
 . $function
 . $prop
 
