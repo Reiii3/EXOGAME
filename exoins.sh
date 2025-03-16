@@ -38,7 +38,7 @@ fi
 
 case $1 in
     --info | -i )
-      echo "   ┌[Λχ] $name | INFORMATION"
+      echo "   ┌[Λx] $name | INFORMATION"
       sleep 0.3
       echo "   ├$p Version Modules : $ver | $verc"
       sleep 0.3
