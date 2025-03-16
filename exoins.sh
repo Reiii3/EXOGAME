@@ -3,6 +3,7 @@ local fun="https://reiii3.github.io/GVRSH/function/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local function="$bin/function"
 local prop="$bin/prop"
+local p="[-]"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -39,20 +40,20 @@ case $1 in
     --info | -i )
       echo "   ┌[Λ] $name | INFORMATION"
       sleep 0.3
-      echo "   ├[📜] Version Modules : $ver | $verc"
+      echo "   ├$p Version Modules : $ver | $verc"
       sleep 0.3
-      echo "   ├[📤] Version Base : $version | $versionCode"
+      echo "   ├$p Version Base : $version | $versionCode"
       sleep 0.3
     if [ "$cek_id" = "$AXERONID" ]; then
-      echo "   ├[🪪] ID : $AXERONID | Terverifikasi Beta Test"
+      echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
       sleep 0.3
     else 
-      echo "   ├[🪪] ID : $AXERONID"
+      echo "   ├$p ID : $AXERONID"
       sleep 0.3
     fi
-      echo "   └┬[🖲] Game : ${nameGame:-null}"
+      echo "   └┬$p Game : ${nameGame:-null}"
       sleep 0.3
-      echo "    └[📁] Packages : ${runPackage:-null}"
+      echo "    └$p Packages : ${runPackage:-null}"
       exit 0
     ;;
 esac
