@@ -51,7 +51,7 @@ case $1 in
       echo "   ├$p ID : $AXERONID"
       sleep 0.3
     fi
-      echo "   └┬$p Game : ${nameGame:-null}"
+      echo "   └┬$p Game : ${nameGame:-addGame}"
       sleep 0.3
       echo "    └$p Packages : ${runPackage:-null}"
       sleep 0.3
