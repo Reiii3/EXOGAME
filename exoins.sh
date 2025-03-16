@@ -54,6 +54,7 @@ case $1 in
       echo "   └┬$p Game : ${nameGame:-null}"
       sleep 0.3
       echo "    └$p Packages : ${runPackage:-null}"
+      sleep 0.3
       exit 0
     ;;
 esac
