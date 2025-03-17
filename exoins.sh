@@ -75,6 +75,7 @@ fi
 
 echo "======================================"
 printer "    Welcome To Modules EXOGAME VIP"
+printer "          Powered by Λxeron"
 echo "======================================"
 printer "       INFORMATION EXOGAME"
 printer "  -Modules Version: ${ver} | ${verc}"
