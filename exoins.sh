@@ -1,6 +1,7 @@
 local bin="/data/local/tmp/exogame"
 local fun="https://reiii3.github.io/GVRSH/function/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
+local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
 local function="$bin/function"
 local prop="$bin/prop"
 local p="[-]"
@@ -54,7 +55,11 @@ case $1 in
   sleep 0.3
   echo "    └$p Packages : ${runPackage:-null}"
   sleep 0.3
-exit 0
+  exit 0
+    ;;
+    --changelogs | -c )
+    storm -x "$changelogs" -fn "changelogs" "$@"
+    exit 0
     ;;
 esac
 
