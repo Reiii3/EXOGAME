@@ -37,23 +37,23 @@ fi
 
 case $1 in
     --info | -i )
-echo "   ┌[Λx] $name | INFORMATION"
-sleep 0.3
-echo "   ├$p Version Modules : $ver | $verc"
-sleep 0.3
-echo "   ├$p Version Base : $version | $versionCode"
-sleep 0.3
-    if [ "$cek_id" = "$AXERONID" ]; then
-echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
-sleep 0.3
-    else 
-echo "   ├$p ID : $AXERONID | your need beta?, pm Developers"
-sleep 0.3
-    fi
-echo "   └┬$p Game : ${nameGame:-addGame}"
-sleep 0.3
-echo "    └$p Packages : ${runPackage:-null}"
-sleep 0.3
+  echo "   ┌[Λx] $name | INFORMATION"
+  sleep 0.3
+  echo "   ├$p Version Modules : $ver | $verc"
+  sleep 0.3
+  echo "   ├$p Version Base : $version | $versionCode"
+  sleep 0.3
+      if [ "$cek_id" = "$AXERONID" ]; then
+  echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
+  sleep 0.3
+      else 
+  echo "   ├$p ID : $AXERONID | your need beta?, pm Developers"
+  sleep 0.3
+      fi
+  echo "   └┬$p Game : ${nameGame:-addGame}"
+  sleep 0.3
+  echo "    └$p Packages : ${runPackage:-null}"
+  sleep 0.3
 exit 0
     ;;
 esac
