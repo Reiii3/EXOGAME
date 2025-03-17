@@ -48,7 +48,7 @@ case $1 in
       echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
       sleep 0.3
     else 
-      echo "   ├$p ID : $AXERONID"
+      echo "   ├$p ID : $AXERONID | your need beta?, pm Developers"
       sleep 0.3
     fi
       echo "   └┬$p Game : ${nameGame:-addGame}"
