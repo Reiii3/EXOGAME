@@ -23,5 +23,5 @@ if [ $cek_beta = true ]; then
   echo "    ├─$des Ini adalah system yang sudah saya rancang untuk mengaktifkan mode yang sudah anda pilih secara otomatis dan jika anda ingin mengganti Game anda harus mereboot system ai nya"
   echo "    ├─$war Fitur ini masih dalam tahab pengembangan Jangan gunakan terlalu sering di karenakn saya masih menganalisa kekurangan fitur ini"
 else
-  
+  echo "Tesss"
 fi
