@@ -76,7 +76,7 @@ fi
 echo "======================================"
 printer "    Welcome To Modules EXOGAME VIP"
 echo "======================================"
-printer "  INFORMATION EXOGAME"
+printer "       INFORMATION EXOGAME"
 printer "  -Modules Version: ${ver} | ${verc}"
 sleep 0.5
 printer "  -Base Version: ${version} | ${versionCode}"
