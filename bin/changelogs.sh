@@ -12,3 +12,10 @@ if [ "$cek_beta" = true ]; then
 else
    echo "Full Version $ver"
 fi
+echo
+if [ $cek_beta = true ]; then
+  echo "   ┌[Exo] New Update Beta Version"
+  echo "   └"
+else
+  
+fi
