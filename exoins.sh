@@ -98,7 +98,7 @@ if [ ! -f "$system" ]; then
   echo
   echo "==============================="
   printer "  [INSTALATION SYSTEM MODULES"
-  printer "     [Active]"
+  printer "           [Active]"
   echo "==============================="
   echo
   echo "" > "$system"
@@ -109,7 +109,7 @@ if [ ! -f "$system" ]; then
 fi
 
 echo "     ============================="
-printer " [PENYESUAIAN SYSTEM GAME]"
+printer "  [PENYESUAIAN SYSTEM GAME]"
 echo "     ============================="
 printer "   [Ekstraking System]"
 if [ -z $renderer ]; then
