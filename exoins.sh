@@ -20,7 +20,6 @@ local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false
 . $function
 . $prop
 
-
 if [ -n "$1" ] && [ "$1" == "-g" ];then
     pkg=$(pm list packages | grep -i "$2" | sed 's/package://g')
     axprop $path_axeronprop runPackage -s "$pkg"
@@ -38,24 +37,24 @@ fi
 
 case $1 in
     --info | -i )
-      echo "   ┌[Λx] $name | INFORMATION"
-      sleep 0.3
-      echo "   ├$p Version Modules : $ver | $verc"
-      sleep 0.3
-      echo "   ├$p Version Base : $version | $versionCode"
-      sleep 0.3
+echo "   ┌[Λx] $name | INFORMATION"
+sleep 0.3
+echo "   ├$p Version Modules : $ver | $verc"
+sleep 0.3
+echo "   ├$p Version Base : $version | $versionCode"
+sleep 0.3
     if [ "$cek_id" = "$AXERONID" ]; then
-      echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
-      sleep 0.3
+echo "   ├$p' ID : $AXERONID | Terverifikasi Beta Test"
+sleep 0.3
     else 
-      echo "   ├$p ID : $AXERONID | your need beta?, pm Developers"
-      sleep 0.3
+echo "   ├$p ID : $AXERONID | your need beta?, pm Developers"
+sleep 0.3
     fi
-      echo "   └┬$p Game : ${nameGame:-addGame}"
-      sleep 0.3
-      echo "    └$p Packages : ${runPackage:-null}"
-      sleep 0.3
-      exit 0
+echo "   └┬$p Game : ${nameGame:-addGame}"
+sleep 0.3
+echo "    └$p Packages : ${runPackage:-null}"
+sleep 0.3
+exit 0
     ;;
 esac
 
@@ -64,7 +63,7 @@ if [ $cek_beta != true ]; then
      echo "   ======================="
      printer "     EXOGAME 1.0 BETA ON"
      echo "   ======================="
-     printer "       [comming soon]"
+     printer " [comming soon]"
      echo
      printer " Developer : $dev"
      echo
@@ -74,4 +73,52 @@ if [ $cek_beta != true ]; then
   fi
 fi
 
-echo "Tesssss"
+echo "======================================"
+printer "    Welcome To Modules EXOGAME VIP"
+echo "======================================"
+printer "  INFORMATION EXOGAME"
+printer "  -Modules Version: ${ver} | ${verc}"
+sleep 0.5
+printer "  -Base Version: ${version} | ${versionCode}"
+sleep 0.5
+printer "  -Developer: "
+sleep 0.5
+if [ -f $system ]; then
+  printer "  -Status: Active"
+  sleep 0.5
+else 
+  printer "  -Status: Non Active"
+  sleep 0.5
+fi
+printer "  -Play Game: ${nameGame:-null}"
+sleep 0.5
+echo "======================================"
+
+if [ ! -f "$system" ]; then 
+  echo
+  echo "==============================="
+  printer "  [INSTALATION SYSTEM MODULES"
+  printer "     [Active]"
+  echo "==============================="
+  echo
+  echo "" > "$system"
+ else 
+  echo 
+  printer "     [SYSTEM ACTIVED]"
+  echo 
+fi
+
+echo "     ============================="
+printer " [PENYESUAIAN SYSTEM GAME]"
+echo "     ============================="
+printer "   [Ekstraking System]"
+if [ -z $renderer ]; then
+ printer "-[RENDER SELECTION]  : [opengl]"
+ setprop debug.hwui.renderer opengl
+else 
+ printer "-[RENDER SELECTION]  : [${renderer}]"
+ setprop debug.hwui.renderer $renderer
+fi
+printer "-[SYSTEM COMPILER ]  : [Succes]"
+printer "-[DRIVER GAME     ]  : [Active]"
+printer "-[ADD NEW   ]  : [COMMING SOON]"
