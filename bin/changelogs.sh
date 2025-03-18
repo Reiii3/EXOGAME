@@ -20,8 +20,8 @@ if [ $cek_beta = true ]; then
   echo "   ┌[Exo] New Update Beta Version"
   echo "   └┬$new AI System By Modules Foxver Auto"
   echo "    ├─$war Masih Dalam pengembangan, "
-  echo "    ├$adjust -System Modules"
-  echo "    │                -Render Selection"
+  echo "    └$adjust -System Modules"
+  echo "                     -Render Selection"
 else
   echo "Tesss"
 fi
