@@ -4,5 +4,4 @@ verc="10"
 betverc=11
 upt="none"
 dev="Reii"
-maintenance=true
 nameGame=""
