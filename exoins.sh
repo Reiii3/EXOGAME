@@ -3,8 +3,10 @@ local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
 local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
+local rmote="https://reiii3.github.io/EXOGAME/user/remote.sh"
 local function="$bin/function"
 local prop="$bin/prop"
+local remote_key="$bin/remote_key"
 local p="[-]"
 local lw="\e[1;97m"
 local nc="\e[0m"
@@ -15,6 +17,7 @@ fi
 $AXFUN
 import axeron.prop
 storm -rP "$bin" -s "${url_fun}" -fn "function" "$@"
+storm -rP "$bin" -s "${rmote}" -fn "remote_key" "$@"
 sleep 1
 if [ ! -f $prop ]; then
   storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
@@ -23,7 +26,7 @@ local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
 local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
 . $function
 . $prop
-
+. $remote_key
 if [ -n "$1" ] && [ "$1" == "-g" ];then
     pkg=$(pm list packages | grep -i "$2" | sed 's/package://g')
     axprop $path_axeronprop runPackage -s "$pkg"
@@ -65,7 +68,7 @@ case $1 in
     exit 0
     ;;
 esac
-
+update
 if [ $cek_beta != true ]; then
   if [ $maintenance = true ]; then
      storm -x "$mainten" -fn "maintenance" "$@"
