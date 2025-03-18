@@ -12,9 +12,9 @@ fi
 
 $AXFUN
 import axeron.prop
-  storm -rP "$bin" -s "${fun}" -fn "function" "$@"
-  sleep 1
-  storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
+storm -rP "$bin" -s "${fun}" -fn "function" "$@"
+sleep 1
+storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
 local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
 local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
 . $function
