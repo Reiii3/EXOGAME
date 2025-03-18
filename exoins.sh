@@ -1,16 +1,19 @@
-local bin="/data/local/tmp/exogame"
-local cash="/data/local/tmp/axeron_cash/EXO"
-local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
-local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
-local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
-local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
-local rmote="https://reiii3.github.io/EXOGAME/user/remote.sh"
-local function="$bin/function"
-local prop="$bin/prop"
-local remote_key="$bin/remote_key"
-local p="[-]"
-local lw="\e[1;97m"
-local nc="\e[0m"
+data() {
+  local bin="/data/local/tmp/exogame"
+  local cash="/data/local/tmp/axeron_cash/EXO"
+  local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
+  local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
+  local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
+  local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
+  local rmote="https://reiii3.github.io/EXOGAME/user/remote.sh"
+  local function="$bin/function"
+  local prop="$bin/prop"
+  local remote_key="$bin/remote_key"
+  local p="[-]"
+  local lw="\e[1;97m"
+  local nc="\e[0m"
+}
+data
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
