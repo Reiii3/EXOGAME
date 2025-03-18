@@ -12,7 +12,7 @@ fi
 
 $AXFUN
 import axeron.prop
-if [ ! -f "$prop" ] && [ ! -f "$function" ]; then
+if [ ! -f "$function" ]; then
   storm -rP "$bin" -s "${fun}" -fn "function" "$@"
   sleep 1
 fi
