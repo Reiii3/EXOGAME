@@ -8,6 +8,7 @@ local k="\033[33m"
 local b="\033[34m"
 local c="\033[36m"
 local h="\033[32m"
+local hn="\033[1;32m"
 local n="\033[0m"
 . $fun
 printer "Exo Game | Maintenance"
