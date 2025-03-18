@@ -3,6 +3,7 @@ local prop="$bin/prop"
 local adjust="[Penyesuaian] :"
 local new="[New] :"
 local war="[Warning] :"
+local p="[-]"
 $AXFUN
 local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
 local cek_beta=$(echo "$cek_id" | grep -q "$AXERONID" && echo true || echo false)
@@ -25,5 +26,8 @@ if [ $cek_beta = true ]; then
   echo "   └$adjust -System Modules"
   echo "                    -Render Selection"
 else
-  echo "Tesss"
+  echo "  ┌[Exo] Feature Full Version
+    └┬$p Render Selection
+     ├$p Compiler Game
+     └$p Driver Game"
 fi
