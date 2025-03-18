@@ -10,6 +10,6 @@ echo "Exo Game | Maintenance
    │mengaktifkan auto render atau bisa di sebut
    │mengubah render saat di dalam game Untuk aktivasi
    │ada di changelogs
-   └┬$ads Menyesuaikan sistem baru yaitu AI System 
-    │Dan Merubah ulang Susunan Kode Ke System Yang Lebih Cepat
+   └┬$ads Menyesuaikan System Ke AI Foxver
+    │Agar System berjalan dengan baik
     └$tnks"
