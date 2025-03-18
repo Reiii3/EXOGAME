@@ -1,4 +1,4 @@
-data() {
+
   local bin="/data/local/tmp/exogame"
   local cash="/data/local/tmp/axeron_cash/EXO"
   local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
@@ -12,7 +12,7 @@ data() {
   local p="[-]"
   local lw="\e[1;97m"
   local nc="\e[0m"
-}
+
 data
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
