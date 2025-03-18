@@ -70,7 +70,7 @@ case $1 in
 esac
 update
 if [ $cek_beta != true ]; then
-  if [ $maintenance = true ]; then
+  if [ $update_sys = true ]; then
      storm -x "$mainten" -fn "maintenance" "$@"
      exit 0
   fi
