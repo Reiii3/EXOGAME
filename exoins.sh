@@ -1,5 +1,5 @@
 local bin="/data/local/tmp/exogame"
-local cash="/data/local/tmp/axeron_cash/EXO/"
+local cash="/data/local/tmp/axeron_cash/EXO"
 local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
@@ -66,6 +66,8 @@ case $1 in
     ;;
     --changelogs | -c )
     storm -x "$changelogs" -fn "changelogs" "$@"
+    sleep 1
+    rm "$cahs/changelogs"
     exit 0
     ;;
 esac
