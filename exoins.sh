@@ -2,6 +2,7 @@ local bin="/data/local/tmp/exogame"
 local fun="https://reiii3.github.io/GVRSH/function/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
+local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
 local function="$bin/function"
 local prop="$bin/prop"
 local p="[-]"
@@ -65,15 +66,7 @@ esac
 
 if [ $cek_beta != true ]; then
   if [ $maintenance = true ]; then
-     echo "   ======================="
-     printer "     EXOGAME 1.0 BETA ON"
-     echo "   ======================="
-     printer " [comming soon]"
-     echo
-     printer " Developer : $dev"
-     echo
-     printer "[IN THE PROCESS OF MANUFACTURING]"
-     sleep 1
+     storm -x "$mainten" -fn "maintenance" "$@"
      exit 0
   fi
 fi
