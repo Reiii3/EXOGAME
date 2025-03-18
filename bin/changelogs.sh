@@ -2,7 +2,6 @@ local bin="/data/local/tmp/exogame"
 local prop="$bin/prop"
 local adjust="[Penyesuaian] :"
 local new="[New] :"
-local des="[Deskripsi] :"
 local war="[Warning] :"
 $AXFUN
 local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
