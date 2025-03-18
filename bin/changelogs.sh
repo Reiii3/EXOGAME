@@ -21,7 +21,7 @@ if [ $cek_beta = true ]; then
   echo "  └┬$new AI System By Modules Foxver Auto"
   echo "   ├$new Compiler System Game"
   echo "   ├$new AOT Compiler Just Balanced Compiler"
-  echo "   ├─$war Masih Dalam pengembangan, "
+  echo "   ├$war Masih Dalam pengembangan, "
   echo "   └$adjust -System Modules"
   echo "                    -Render Selection"
 else
