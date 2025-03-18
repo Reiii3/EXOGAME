@@ -6,6 +6,8 @@ local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
 local function="$bin/function"
 local prop="$bin/prop"
 local p="[-]"
+local lw="\e[1;97m"
+local nc="\e[0m"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -37,7 +39,7 @@ fi
 
 case $1 in
     --info | -i )
-  echo "   ┌[Λxeron] $name | INFORMATION"
+  echo "   ┌[${lw}Λxeron${nc}] $name | INFORMATION"
   sleep 0.3
   echo "   ├$p Version Modules : $ver | $verc"
   sleep 0.3
