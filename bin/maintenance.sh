@@ -3,6 +3,9 @@ local tnks="[Copyrigth By ReiiEja]"
 local ads="[Adjustment]"
 local bin="/data/local/tmp/exogame"
 local fun="$bin/function"
+#Color
+local hijau="\033[32m"
+local ncol="\033[0m"
 . $fun
 printer "Exo Game | Maintenance"
 printer "┌[Exo] Add New Feature && Adjustment"
