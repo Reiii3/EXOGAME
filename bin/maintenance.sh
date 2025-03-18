@@ -1,5 +1,5 @@
 local new="[New]"
-local tnks="[Copyrigth By ReiiEja]"
+local tnks="[©Copyrigth By ReiiEja]"
 local ads="[Adjustment]"
 local bin="/data/local/tmp/exogame"
 local fun="$bin/function"
