@@ -27,7 +27,7 @@ if [ $cek_beta = true ]; then
   echo "                    -Render Selection"
 else
   echo "  ┌[Exo] Feature Full Version
-    └┬$p Render Selection
-     ├$p Compiler Game
-     └$p Driver Game"
+  └┬$p Render Selection
+   ├$p Compiler Game
+   └$p Driver Game"
 fi
