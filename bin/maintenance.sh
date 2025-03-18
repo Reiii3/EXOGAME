@@ -4,10 +4,12 @@ local ads="[Adjustment]"
 local bin="/data/local/tmp/exogame"
 local fun="$bin/function"
 . $fun
-printer "Exo Game | Maintenance
- ┌[Exo] Add New Feature && Adjustment
- └┬$new AOT Compiler
-  ├$new AI System By Foxver Auto
-  └┬$ads Menyesuaikan System Ke AI Foxver
-   │Agar System berjalan dengan baik
-   └$tnks"
+printer "Exo Game | Maintenance"
+printer "┌[Exo] Add New Feature && Adjustment"
+echo -n "└┬$new " 
+printer "AOT Compiler"
+echo -n " ├$new " 
+printer "AI System By Foxver Auto"
+printer " └┬$ads Menyesuaikan System Ke AI Foxver"
+printer "  │Agar System berjalan dengan baik"
+printer "  └$tnks"
