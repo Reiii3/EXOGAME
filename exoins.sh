@@ -13,7 +13,6 @@
   local lw="\e[1;97m"
   local nc="\e[0m"
 
-data
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
