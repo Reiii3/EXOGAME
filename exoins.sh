@@ -1,5 +1,5 @@
 local bin="/data/local/tmp/exogame"
-local fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
+local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
 local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
@@ -12,7 +12,7 @@ fi
 
 $AXFUN
 import axeron.prop
-storm -rP "$bin" -s "${fun}" -fn "function" "$@"
+storm -rP "$bin" -s "${url_fun}" -fn "function" "$@"
 sleep 1
 storm -rP "$bin" -s "${onprop}" -fn "prop" "$@"
 local cek_id=$(storm "https://reiii3.github.io/EXOGAME/user/beta.txt")
