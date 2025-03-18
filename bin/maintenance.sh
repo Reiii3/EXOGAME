@@ -12,7 +12,7 @@ local hn="\e[1;32m"
 local nc="\e[0m"
 . $fun
 printer "Exo Game | Maintenance"
-printer "┌[${hn}Exo${nc}] Add New Feature && Adjustment"
+printer "┌${hn}[Exo]${nc} Add New Feature && Adjustment"
 echo -n "└┬${h}$new ${nc}" 
 printer "AOT Compiler"
 echo -n " ├${h}$new ${nc}" 
