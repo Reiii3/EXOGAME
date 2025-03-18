@@ -21,7 +21,7 @@ if [ $cek_beta = true ]; then
   echo "   ┌[Exo] New Update Beta Version"
   echo "   └┬$new AI System By Modules Foxver Auto"
   echo "    ├─$des System pintar yang dapat "
-  echo "    │        mengaktikan mode secara otomatis"
+  echo "    │mengaktikan mode secara otomatis"
   echo "    ├─$war Masih Dalam pengembangan, "
 else
   echo "Tesss"
