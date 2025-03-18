@@ -1,5 +1,5 @@
 local bin="/data/local/tmp/exogame"
-local fun="https://reiii3.github.io/GVRSH/function/function.sh"
+local fun="https://reiii3.github.io/Center-Modules/core-system/function.sh"
 local onprop="https://reiii3.github.io/EXOGAME/bin/prop.sh"
 local changelogs="https://reiii3.github.io/EXOGAME/bin/changelogs.sh"
 local mainten="https://reiii3.github.io/EXOGAME/bin/maintenance.sh"
