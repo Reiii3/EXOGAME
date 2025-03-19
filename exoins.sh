@@ -1,4 +1,3 @@
-
   local bin="/data/local/tmp/exogame"
   local cash="/data/local/tmp/axeron_cash/EXO"
   local url_fun="https://reiii3.github.io/Center-Module/core-system/function.sh"
@@ -10,9 +9,9 @@
   local prop="$bin/prop"
   local remote_key="$bin/remote_key"
   local p="[-]"
+  local or="\033[38;2;255;85;3m"
   local lw="\e[1;97m"
   local nc="\e[0m"
-
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
@@ -47,7 +46,7 @@ fi
 
 case $1 in
     --info | -i )
-  echo "   ┌[${lw}Λxeron${nc}] $name | INFORMATION"
+  echo "   ┌[${or}Λxeron${nc}] $name | INFORMATION"
   sleep 0.3
   echo "   ├$p Version Modules : $ver | $verc"
   sleep 0.3
