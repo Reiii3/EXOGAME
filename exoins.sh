@@ -8,10 +8,10 @@
   local function="$bin/function"
   local prop="$bin/prop"
   local remote_key="$bin/remote_key"
-  local p="[-]"
   local or="\033[38;2;255;85;3m"
   local lw="\e[1;97m"
   local nc="\e[0m"
+  local p="[${lw}-${nc}]"
 if [ ! -f $bin ]; then
   mkdir -p "$bin"
 fi
