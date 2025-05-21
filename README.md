@@ -1,2 +1,1 @@
 # EXOGAME
-VIP Mynz Project
