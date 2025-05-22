@@ -72,16 +72,9 @@ case $1 in
     exit 0
     ;;
 esac
-update
-if [ $cek_beta != true ]; then
-  if [ $update_sys = true ]; then
-     storm -x "$mainten" -fn "maintenance" "$@"
-     exit 0
-  fi
-fi
 
 echo "======================================"
-printer "    Welcome To Modules EXOGAME VIP"
+printer "      Welcome To Modules EXOGAME"
 printer "          Powered by Λxeron"
 echo "======================================"
 printer "       INFORMATION EXOGAME"
