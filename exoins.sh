@@ -81,7 +81,7 @@ if [ $cek_beta != true ]; then
 fi
 
 echo "======================================"
-printer "    Welcome To Modules EXOGAME VIP"
+printer "    Welcome To Modules EXOGAME "
 printer "          Powered by Λxeron"
 echo "======================================"
 printer "       INFORMATION EXOGAME"
